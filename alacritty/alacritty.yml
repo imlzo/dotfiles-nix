@@ -1,0 +1,32 @@
+#
+# alacritty config
+#
+
+font:
+  size: 14.0
+
+  normal:
+    family: Fira Mono for Powerline
+    style: Regular
+
+  bold:
+    style: Bold
+
+  italic:
+    style: Italic
+
+      # use_thin_strokes: true
+
+window:
+  padding:
+    x: 5
+    y: 5
+  dynamic_padding: false
+  decorations: none
+  startup_mode: Maximized
+
+scrolling:
+  history: 100000
+
+mouse:
+  hide_when_typing: true
