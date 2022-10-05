@@ -21,4 +21,9 @@
   xdg.configFile."git" = {
     source = ~/dotfiles/git;
   };
+
+  # tmux
+  home.file.".tmux.conf" = {
+    source = ~/dotfiles/tmux/tmux.conf;
+  };
 }
