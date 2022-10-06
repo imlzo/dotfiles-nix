@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# vimgit    - Use vim as a git client (via fugitive)
+#
+
+# Open fugitive git status in only window
+nvim -c "vertical G | wincmd o"

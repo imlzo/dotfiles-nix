@@ -1,4 +1,7 @@
 { config, lib, pkgs, ...}:
+let
+  symlink = config.lib.file.mkOutOfStoreSymlink;
+in
 {
   nixpkgs.config.allowUnfree = true;
 
@@ -12,18 +15,22 @@
     tree
     vim
     gh
-    gcc
+    zsh
   ];
 
   # vim
-  home.file.".vimrc".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/vim/vimrc;
+  home.file.".vimrc".source = symlink ~/dotfiles/vim/vimrc;
 
   # git
-  xdg.configFile."git".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/git;
+  xdg.configFile."git".source = symlink ~/dotfiles/git;
 
   # tmux
-  home.file.".tmux.conf".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/tmux/tmux.conf;
+  home.file.".tmux.conf".source = symlink ~/dotfiles/tmux/tmux.conf;
 
   # neovim
-  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/nvim;
+  xdg.configFile."nvim".source = symlink ~/dotfiles/nvim;
+
+  # zsh
+  home.file.".zshrc".source = symlink ~/dotfiles/zsh/zshrc;
+  home.file.".zsh".source = symlink ~/dotfiles/zsh/dot-zsh;
 }

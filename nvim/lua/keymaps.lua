@@ -171,7 +171,7 @@ end)
 --[[
 -- Foldmethods
 --]]
-map('n', '<leader>fmm', ':set foldmethod=manual<cr>', { noremap = true, silent = false })
+map('n', '<leader>fmm', ':set foldmethod=marker<cr>', { noremap = true, silent = false })
 map('n', '<leader>fmi', ':set foldmethod=indent<cr>', { noremap = true, silent = false })
 map('n', '<leader>fme', ':set foldmethod=expr<cr>', { noremap = true, silent = false })
 map('n', '<leader>fms', ':set foldmethod=syntax<cr>', { noremap = true, silent = false })

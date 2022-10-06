@@ -18,7 +18,9 @@ in {
   home.packages = with pkgs; [
     _1password-gui
     firefox
+    gcc
     xclip
+    starship
   ];
 
   # alacritty
