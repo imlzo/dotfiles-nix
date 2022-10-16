@@ -1,4 +1,6 @@
-
+#
+# linux.mk - Setup for linux
+#
 
 .PHONY: remap_capslock
 remap_capslock:			## Remap capslock (linux)

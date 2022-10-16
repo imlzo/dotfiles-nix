@@ -1,4 +1,6 @@
-# makefile - ssh
+#
+# ssh.mk - Makefile for SSH setup
+#
 
 PERSONAL_KEY:="$(HOME)/.ssh/id_ed25519"
 WORK_KEY:="$(HOME)/.ssh/id_ed25519_work"

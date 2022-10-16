@@ -1,3 +1,6 @@
+#
+# nix.mk - Setup for nix
+#
 
 NIX_CONFIG_TGT_DIR:="$(HOME)/.config/nix"
 NIX_CONFIG_SRC_DIR:="$(HOME)/dotfiles/nix"
