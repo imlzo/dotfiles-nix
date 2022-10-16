@@ -9,6 +9,7 @@
     ./coreutils.nix
     ./linux.nix
     ./rust.nix
+    ./elixir.nix
   ];
 
 }
