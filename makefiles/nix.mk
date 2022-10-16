@@ -19,6 +19,7 @@ nix_install:	## Install nix (multi-user)
 nix_setup: 	## setup nix (after installation)
 	nix-channel --add https://nixos.org/channels/nixpkgs-unstable
 	nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+	nix-channel --add https://github.com/nix-community/NUR/archive/master.tar.gz nur
 	nix-channel --add https://github.com/guibou/nixGL/archive/main.tar.gz nixgl
 	nix-channel --update
 	nix-shell '<home-manager>' -A install

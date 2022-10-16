@@ -16,9 +16,12 @@ let
 in {
   targets.genericLinux.enable = true;
 
+  imports = [
+    ./firefox.nix
+  ];
+
   home.packages = with pkgs; [
     _1password-gui
-    firefox
     gcc
     xclip
     powerline-fonts
