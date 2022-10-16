@@ -35,4 +35,8 @@ in
   # zsh
   home.file.".zshrc".source = symlink ~/dotfiles/zsh/zshrc;
   home.file.".zsh".source = symlink ~/dotfiles/zsh/dot-zsh;
+
+  # starship
+  xdg.configFile."starship.toml".source = symlink ~/dotfiles/starship/starship.toml;
+
 }
