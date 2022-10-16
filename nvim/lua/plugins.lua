@@ -51,6 +51,7 @@ p.startup(function(use)
   use 'rust-lang/rust.vim'
   use 'norcalli/nvim-terminal.lua'
   use 'rhysd/vim-wasm'
+  use 'LnL7/vim-nix'
 
   -- web
   use 'mattn/emmet-vim'

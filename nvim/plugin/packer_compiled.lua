@@ -264,6 +264,11 @@ _G.packer_plugins = {
     path = "/home/imlzo/.local/share/nvim/site/pack/packer/start/vim-markdown",
     url = "https://github.com/tpope/vim-markdown"
   },
+  ["vim-nix"] = {
+    loaded = true,
+    path = "/home/imlzo/.local/share/nvim/site/pack/packer/start/vim-nix",
+    url = "https://github.com/LnL7/vim-nix"
+  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/home/imlzo/.local/share/nvim/site/pack/packer/start/vim-repeat",
