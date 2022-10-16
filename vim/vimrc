@@ -5,6 +5,9 @@ filetype plugin on
 syntax on
 source $VIMRUNTIME/defaults.vim
 
+" theme
+colorscheme slate
+
 " search
 set ignorecase
 set smartcase
