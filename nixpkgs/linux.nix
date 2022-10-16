@@ -37,4 +37,7 @@ in {
     package = nixGLWrap pkgs.alacritty;
   };
 
+  # i3wm
+  xdg.configFile.i3.source = symlink ~/dotfiles/i3;
+
 }
