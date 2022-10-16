@@ -13,6 +13,8 @@ in
     ripgrep
     tmux
     tree
+    pstree
+    zoxide
     vim
     gh
     zsh
