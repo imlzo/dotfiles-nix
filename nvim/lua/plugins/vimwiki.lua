@@ -43,8 +43,8 @@ vim.g.vimwiki_conceal_onechar_markers = 0
 
 -- Registration
 local user = os.getenv("USER")
-if user == "eruesu" then
-  vim.g.vimwiki_list = { wiki_personal, wiki_humane }
+if user == "eruesu" or user == "imlzo" then
+  vim.g.vimwiki_list = { wiki_personal }
 else
   vim.g.vimwiki_list = { wiki_humane, wiki_personal }
 end
