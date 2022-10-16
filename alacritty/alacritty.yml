@@ -6,7 +6,7 @@ font:
   size: 14.0
 
   normal:
-    family: Fira Mono for Powerline
+    family: Fira Mono
     style: Regular
 
   bold:
@@ -15,7 +15,7 @@ font:
   italic:
     style: Italic
 
-      # use_thin_strokes: true
+  AppleFontSmoothing: true
 
 window:
   padding:

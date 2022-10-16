@@ -12,6 +12,7 @@ let
        chmod +x $wrapped_bin
       done
     '';
+  symlink = config.lib.file.mkOutOfStoreSymlink;
 in {
   targets.genericLinux.enable = true;
 
@@ -21,10 +22,14 @@ in {
     gcc
     xclip
     starship
+    powerline-fonts
+    fira
+    fira-mono
+    fira-code-symbols
   ];
 
   # alacritty
-  # xdg.configFile.alacritty.source = ~/dotfiles/alacritty;
+  xdg.configFile.alacritty.source = symlink ~/dotfiles/alacritty;
   programs.alacritty = {
     enable = true;
     package = nixGLWrap pkgs.alacritty;
