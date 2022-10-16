@@ -19,6 +19,9 @@ in
     vim
     zoxide
     zsh
+    zsh-autosuggestions
+    zsh-completions
+    zsh-syntax-highlighting
   ];
 
   # vim

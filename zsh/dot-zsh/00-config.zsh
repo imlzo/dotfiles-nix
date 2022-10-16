@@ -12,9 +12,15 @@ export PAGER=less
 export NIX_PATH=$HOME/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels${NIX_PATH:+:$NIX_PATH}
 
 path=(
-  # $HOME/.cargo/bin
+  $HOME/.cargo/bin
+  $HOME/.nix-profile/bin
   $HOME/.zsh/scripts
   $path
+)
+
+fpath=(
+  $HOME/.nix-profile/share/zsh/site-functions
+  $fpath
 )
 
 # }}}
