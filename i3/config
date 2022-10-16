@@ -51,6 +51,15 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Theme {{{
+
+client.focused          #586e75 #586e75 #eee8d5 #268bd2   #073642
+client.focused_inactive #073642 #073642 #eee8d5 #268bd2   #073642
+client.unfocused        #073642 #073642 #eee8d5 #268bd2   #073642
+client.urgent           #073642 #dc322f #eee8d5 #268bd2   #073642
+
+# }}}
+
 # Applications {{{
 
 # start a terminal
