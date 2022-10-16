@@ -40,4 +40,7 @@ in
   # starship
   xdg.configFile."starship.toml".source = symlink ~/dotfiles/starship/starship.toml;
 
+  # ssh
+  home.file.".ssh/config".source = symlink ~/dotfiles/ssh/config;
+
 }

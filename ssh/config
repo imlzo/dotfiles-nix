@@ -1,0 +1,6 @@
+Host *
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  IgnoreUnknown UseKeychain
+  UseKeychain yes
+
