@@ -8,6 +8,7 @@
   imports = [
     ./coreutils.nix
     ./linux.nix
+    ./rust.nix
   ];
 
 }

@@ -21,7 +21,6 @@ in {
     firefox
     gcc
     xclip
-    starship
     powerline-fonts
     fira
     fira-mono

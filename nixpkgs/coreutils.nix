@@ -8,15 +8,16 @@ in
   home.packages = with pkgs; [
     fd
     fzf
+    gh
     git
     neovim
+    pstree
     ripgrep
+    starship
     tmux
     tree
-    pstree
-    zoxide
     vim
-    gh
+    zoxide
     zsh
   ];
 
