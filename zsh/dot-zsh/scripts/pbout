@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+# pbout - Pasteboard out. Shim over `xclip -o` and `pbpaste`. See also `pbin`
+#
+
+if command -v pbpaste>/dev/null 2>&1; then
+  pbpaste
+elif command -v xclip>/dev/null 2>&1; then
+  xclip -out
+else
+  echo "Unable to find pbpaste or xclip" >&2
+fi
+
