@@ -23,6 +23,8 @@ font pango:monospace 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex-autostart --autostart --environment i3
 
+exec picom
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -43,20 +45,18 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Brightness
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
-# bindsym $mod+b exec --no-startup-id xbacklight -inc 5
-# bindsym $mod+n exec --no-startup-id xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # Theme {{{
 
-client.focused          #586e75 #586e75 #eee8d5 #268bd2   #073642
-client.focused_inactive #073642 #073642 #eee8d5 #268bd2   #073642
-client.unfocused        #073642 #073642 #eee8d5 #268bd2   #073642
-client.urgent           #073642 #dc322f #eee8d5 #268bd2   #073642
+# client.focused          #586e75 #586e75 #eee8d5 #268bd2   #073642
+# client.focused_inactive #073642 #073642 #eee8d5 #268bd2   #073642
+# client.unfocused        #073642 #073642 #eee8d5 #268bd2   #073642
+# client.urgent           #073642 #dc322f #eee8d5 #268bd2   #073642
 
 # }}}
 
