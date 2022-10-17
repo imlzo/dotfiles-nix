@@ -6,7 +6,7 @@ font:
   size: 14.0
 
   normal:
-    family: Fira Mono
+    # family: Fira Mono
     style: Regular
 
   bold:
