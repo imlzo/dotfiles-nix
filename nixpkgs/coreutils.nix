@@ -10,6 +10,7 @@ in
     fzf
     gh
     git
+    htop
     neovim
     pstree
     ripgrep
