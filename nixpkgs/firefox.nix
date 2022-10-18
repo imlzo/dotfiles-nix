@@ -7,6 +7,7 @@ in {
     extensions = with nur.repos.rycee.firefox-addons; [
       vimium
       onepassword-password-manager
+      rust-search-extension
     ];
     profiles = {
       default = {
