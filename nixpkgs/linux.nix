@@ -40,4 +40,10 @@ in {
   # i3wm
   xdg.configFile.i3.source = symlink ~/dotfiles/i3;
 
+  # sway
+  xdg.configFile.sway.source = symlink ~/dotfiles/sway;
+
+  # env
+  xdg.configFile."environment.d/10-user-path.conf".source = symlink ~/dotfiles/env/10-user-path.conf;
+
 }
