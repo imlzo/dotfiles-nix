@@ -12,6 +12,8 @@ in {
     ];
     profiles = {
       default = {
+
+        # See about:config
         settings = {
           # ”signon.rememberSignons” = false;
           "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
@@ -20,6 +22,7 @@ in {
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         };
 
+        # See https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules
         userChrome = "
           #tabbrowser-tabs {
             visibility: collapse !important;
