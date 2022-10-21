@@ -4,10 +4,18 @@
 #
 #  Read `man 5 sway` for a complete reference.
 
-output eDP-1 scale 1.3
+output eDP-1 scale 1.0
+
+gaps inner 10
 
 input "type:keyboard" {
   xkb_options caps:ctrl_modifier
+}
+
+# Hide cursor when typing
+seat * {
+  hide_cursor when-typing enable
+  hide_cursor 8000
 }
 
 ### Variables
@@ -29,19 +37,15 @@ set $browser firefox
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
-# set $menu dmenu_run
-
-# from i3config
-# bindsym $mod+space exec --no-startup-id dmenu_run
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/default.png fill
+output * bg ~/.config/sway/ApusColors2.png fill
 
 ### Brightness (WIP)
-# bindsym XF86MonBrightnessUp exec sudo light -A 10
-# bindsym XF86MonBrightnessDown exec sudo light -U 10
+bindsym XF86MonBrightnessUp exec sudo light -A 10
+bindsym XF86MonBrightnessDown exec sudo light -U 10
 
 #
 # Example configuration:
@@ -54,14 +58,12 @@ output * bg /usr/share/backgrounds/default.png fill
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+# Lock after 300s of inactivity
+# Screen off after another 300s, locking beforehand
+exec swayidle -w \
+       timeout 300 'swaylock -f -c 000000' \
+       timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+       before-sleep 'swaylock -f -c 000000'
 
 ### Input configuration
 #
@@ -91,7 +93,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 #
     # Start a terminal
     bindsym $mod+Return exec $term
-    
+
     # Start a browser
     bindsym $mod+b exec $browser
 
@@ -99,7 +101,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+Space exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -185,7 +187,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    # bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
@@ -232,7 +234,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position bottom
+    position top
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
