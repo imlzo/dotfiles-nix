@@ -18,6 +18,9 @@ seat * {
   hide_cursor 8000
 }
 
+for_window [class="^.*"] inhibit_idle fullscreen
+for_window [app_id="^.*"] inhibit_idle fullscreen
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
