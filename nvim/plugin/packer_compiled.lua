@@ -249,6 +249,11 @@ _G.packer_plugins = {
     path = "/home/imlzo/.local/share/nvim/site/pack/packer/start/vim-dispatch",
     url = "https://github.com/tpope/vim-dispatch"
   },
+  ["vim-elixir"] = {
+    loaded = true,
+    path = "/home/imlzo/.local/share/nvim/site/pack/packer/start/vim-elixir",
+    url = "https://github.com/elixir-editors/vim-elixir"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/imlzo/.local/share/nvim/site/pack/packer/start/vim-fugitive",

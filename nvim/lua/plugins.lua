@@ -52,6 +52,7 @@ p.startup(function(use)
   use 'norcalli/nvim-terminal.lua'
   use 'rhysd/vim-wasm'
   use 'LnL7/vim-nix'
+  use 'elixir-editors/vim-elixir'
 
   -- web
   use 'mattn/emmet-vim'

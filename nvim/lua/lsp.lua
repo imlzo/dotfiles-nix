@@ -101,7 +101,7 @@ require('lspconfig').rust_analyzer.setup {
 -- elixir-ls
 --
 require('lspconfig').elixirls.setup {
-  cmd = { "/opt/homebrew/bin/elixir-ls" },
+  cmd = { "elixir-ls" },
   on_attach = on_attach,
 }
 
