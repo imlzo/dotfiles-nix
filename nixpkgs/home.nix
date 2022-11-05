@@ -10,6 +10,7 @@
     ./linux.nix
     ./rust.nix
     ./elixir.nix
+    ./wasm.nix
   ];
 
 }
