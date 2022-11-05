@@ -6,7 +6,7 @@
 
 output eDP-1 scale 1.2
 
-exec wlsunset -l 37.77493 -L -122.41942 &    # San Francisco
+exec wlsunset -t 2000 -l 37.77493 -L -122.41942    # San Francisco
 
 gaps inner 10
 
