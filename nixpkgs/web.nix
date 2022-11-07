@@ -1,6 +1,8 @@
 { config, lib, pkgs, ...}:
 {
   home.packages = with pkgs; [
-    nodePackages.typescript-language-server
+    nvm
+    # nodePackages.typescript
+    # nodePackages.typescript-language-server
   ];
 }
