@@ -12,6 +12,7 @@ in
     git
     htop
     neovim
+    openssl
     pstree
     ripgrep
     starship
