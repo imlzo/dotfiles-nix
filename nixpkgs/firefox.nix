@@ -9,6 +9,7 @@ in {
       onepassword-password-manager
       rust-search-extension
       tree-style-tab
+      ublock-origin
     ];
     profiles = {
       default = {
