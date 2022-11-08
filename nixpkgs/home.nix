@@ -11,7 +11,6 @@
     ./rust.nix
     ./elixir.nix
     ./wasm.nix
-    ./web.nix
   ];
 
 }
