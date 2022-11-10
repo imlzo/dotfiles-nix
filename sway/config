@@ -23,6 +23,8 @@ seat * {
 for_window [class="^.*"] inhibit_idle fullscreen
 for_window [app_id="^.*"] inhibit_idle fullscreen
 
+focus_follows_mouse no
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
