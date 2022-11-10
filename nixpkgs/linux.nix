@@ -28,6 +28,8 @@ in {
     fira
     fira-mono
     fira-code-symbols
+    perl # needed for cargo-web
+    inotify-tools
   ];
 
   # alacritty
