@@ -1,12 +1,9 @@
 # dotfiles
 
-imlzo's dotfiles
+Dotfiles
 
 ## TODOs
 
-- zsh
 - nix-darwin
-- firefox + extensions
-- Makefile for `install_nix`
-- flakes?
+- nix flakes?
 
