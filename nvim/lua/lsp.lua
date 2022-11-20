@@ -37,9 +37,6 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
   buf_set_keymap('n', '<space>rf', '<cmd>lua vim.lsp.buf.format({ async = true })<CR>', opts)
 
-  -- Aerial.nvim
-  require("aerial").on_attach(client, bufnr)
-
 end
 
 
