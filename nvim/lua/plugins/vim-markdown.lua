@@ -6,6 +6,7 @@ vim.g.markdown_fenced_languages = {
   "c",
   "cpp",
   "css",
+  "eelixir",
   "elixir",
   "erlang",
   "html",
