@@ -30,3 +30,6 @@ scrolling:
 
 mouse:
   hide_when_typing: true
+
+env:
+  WINIT_X11_SCALE_FACTOR: "1"

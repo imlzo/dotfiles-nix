@@ -16,13 +16,8 @@ let
 in {
   targets.genericLinux.enable = true;
 
-  imports = [
-    ./firefox.nix
-  ];
-
   home.packages = with pkgs; [
     _1password-gui
-    gcc
     xclip
     powerline-fonts
     fira
@@ -38,9 +33,6 @@ in {
     enable = true;
     package = nixGLWrap pkgs.alacritty;
   };
-
-  # i3wm
-  xdg.configFile.i3.source = symlink ~/dotfiles/i3;
 
   # sway
   xdg.configFile.sway.source = symlink ~/dotfiles/sway;

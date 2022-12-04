@@ -6,12 +6,16 @@
   programs.home-manager.enable = true;
 
   imports = [
+    # Base
     ./coreutils.nix
+
+    # Device
     ./linux.nix
+
+    # Layers
     ./rust.nix
     ./elixir.nix
     ./wasm.nix
-    # ./node.nix WIP
   ];
 
 }

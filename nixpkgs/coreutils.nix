@@ -10,6 +10,7 @@ in
     bat
     fd
     fzf
+    gcc
     gh
     git
     htop
