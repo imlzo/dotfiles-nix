@@ -23,6 +23,9 @@ fpath=(
   $fpath
 )
 
+# Nix on Non-NixOS Locale Fix
+# https://nixos.wiki/wiki/Locales
+export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
 # }}}
 
 # vim mode {{{
