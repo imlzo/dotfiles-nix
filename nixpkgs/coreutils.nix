@@ -23,7 +23,7 @@ in
     tree
     vim
     zoxide
-    zsh
+    # zsh
     zsh-autosuggestions
     zsh-completions
     zsh-syntax-highlighting
