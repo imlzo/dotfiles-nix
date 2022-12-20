@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+# open - shim for xdg-open and macOS open
+#
+
+if type xdg-open >/dev/null; then
+  xdg-open $@
+else
+  open $@
+fi
+
+

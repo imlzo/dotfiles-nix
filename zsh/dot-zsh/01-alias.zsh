@@ -28,3 +28,6 @@ alias l='ls -FoG'
 alias ll='ls -FoGa'
 # }}}
 
+# core {{{
+alias o='open'
+# }}}
